@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiran Kumar K Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/d339f88e11.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body style="background: black;">
+    <div id="header">
+        <div class="container">
+            <h2 class="icon"></h2>
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+       
+<div class="header-text">
+    <p>Cybersecurity Enthusiast & Developer</p>
+    <h1>Hi, I'm <span>Kiran Kumar K</span> <br> From Haveri, Karnataka</h1>
+</div>
+        </div>
+    </div>
+ 
+                       <!-- ------about--------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="./Images/kiran.jpg" alt="Kiran's Picture">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1><br>
+                <p>I am passionate about cybersecurity and web development with experience in ethical hacking, vulnerability assessments, and web application development. 
+                   My expertise includes using Linux for penetration testing and developing applications using technologies like Django and Streamlit. 
+                   I am driven by a desire to continually learn and apply new skills in real-world scenarios. Currently pursuing a degree in Computer Science Engineering, 
+                   I aim to make meaningful contributions to the tech world by building secure and efficient applications.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Cybersecurity</span><br>Vulnerability Testing, Ethical Hacking</li>
+                            <li><span>Web Development</span><br>Experienced in Django, Streamlit, HTML/CSS</li>
+                            <li><span>Programming</span><br>Proficient in Python, Java, C</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2023-2024</span><br>Freelance Web Developer & Cybersecurity Consultant</li>
+                            <li><span>2024</span><br>Intern at Mangalore Cyber Crime Department</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2024</span><br>BE in Computer Science Engineering from Alva's Institute of Engineering and Technology</li>
+                            <li><span>2019</span><br>Diploma in Mechanical Engineering from S J V P Polytechnic College, Harihar</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+    <!-- =========Services============ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div class="change">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I specialize in developing efficient web applications using Django and Streamlit. 
+                       I am experienced in front-end and back-end technologies, ensuring a seamless user experience.</p>
+                    <a href="#">Learn more</a>           
+                </div>
+                <div class="change">
+                    <i class="fa-solid fa-shield-alt"></i>
+                    <h2>Cybersecurity</h2>        
+                    <p>With a background in ethical hacking and vulnerability assessment, I provide security testing services to help organizations identify and mitigate potential risks.</p>
+                    <a href="#">Learn more</a>           
+                </div>  
+                <div class="change">
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>
+I design clean and intuitive interfaces for web and mobile applications, ensuring a user-friendly experience through modern design principles and tools like Figma.</p>
+                    <a href="#">Learn more</a>           
+                </div>
+            </div> 
+        </div>
+    </div>
+    <!-- =================Portfolio=============== -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+             <div class="work-list">
+                <div class="work">
+                    <img src="./Images/work1.jpg" alt="Image Color Compression">
+                    <div class="layer">
+                        <h3>Image Color Compression using K-Means</h3>
+                        <p>Reduced the number of colors in images using K-Means clustering, optimizing visual quality and performance.</p>
+                        <a href="https://github.com/KIRAN-KUMAR-K3/Image-Color-Compression-using-K-Means"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./Images/work2.jpg" alt="Railway Administration System">
+                    <div class="layer">
+                        <h3>Railway Administration System</h3>
+                        <p>Developed a system for train search, ticket booking, and seat viewing, with both user and admin functionalities.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./Images/work3.jpg" alt="Orphanage Management System">
+                    <div class="layer">
+                        <h3>Orphanage Management System</h3>
+                        <p>A Streamlit project that connects donors with orphanages, managing donations, records, and resources efficiently.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+             </div>
+             <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+<!-- ==================Contact me=========================== -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+            <div class="contact-left">
+                
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>18kirankumar.k03@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-phone"></i>+91 8310937381</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/kiran-kumar-k3/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/KIRAN-KUMAR-K3"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="#" class="btn btn2">Download CV</a>
+            </div>
+            </div>
+            <div class="col-sm-6">
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">Copyright © 2024 Kiran Kumar K. All rights reserved.</div>
+</div>
+
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links")
+    var tabcontents=document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+
+</script>
+</body>
+</html>
+
