@@ -6,7 +6,7 @@
     <title>Kiran Kumar K | VAPT Specialist & Security Analyst</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -75,24 +75,56 @@
             letter-spacing: 1px;
             cursor: pointer;
             transition: 0.3s;
+            font-family: var(--font-head); /* More professional font for buttons too */
         }
         .btn:hover { background: var(--primary); color: #000; box-shadow: 0 0 30px var(--primary-glow); }
 
-        /* --- 4. NAVIGATION --- */
+        /* --- 4. NAVIGATION (UPDATED) --- */
         nav {
             position: fixed; top: 0; width: 100%; z-index: 1000;
-            background: rgba(3, 3, 3, 0.9);
+            background: rgba(3, 3, 3, 0.95);
             border-bottom: 1px solid var(--border-color);
             backdrop-filter: blur(10px);
         }
         .nav-inner {
             display: flex; justify-content: space-between; align-items: center; height: 70px;
         }
-        .logo { font-family: var(--font-head); font-size: 1.8rem; font-weight: 700; color: #fff; }
+        .logo { 
+            font-family: var(--font-head); 
+            font-size: 1.8rem; 
+            font-weight: 700; 
+            color: #fff; 
+            letter-spacing: 1px;
+        }
         .logo span { color: var(--primary); }
-        .nav-menu { display: flex; gap: 30px; }
-        .nav-menu a { font-size: 0.9rem; color: #aaa; }
+        
+        .nav-menu { display: flex; gap: 40px; }
+        
+        /* NEW PROFESSIONAL NAV STYLING */
+        .nav-menu a { 
+            font-family: var(--font-head); /* Using Rajdhani for cleaner look */
+            font-size: 1.1rem; 
+            font-weight: 600;
+            color: #ccc; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+        }
+        
         .nav-menu a:hover { color: var(--primary); }
+        
+        /* Underline effect on hover */
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: var(--primary);
+            transition: width 0.3s;
+        }
+        .nav-menu a:hover::after { width: 100%; }
 
         /* --- 5. HERO SECTION --- */
         #hero {
@@ -235,11 +267,11 @@
         <div class="container nav-inner">
             <div class="logo">KIRAN <span>KUMAR K</span></div>
             <div class="nav-menu">
-                <a href="#about">/ ABOUT</a>
-                <a href="#skills">/ ARSENAL</a>
-                <a href="#experience">/ TIMELINE</a>
-                <a href="#projects">/ OPS</a>
-                <a href="#contact">/ COMMS</a>
+                <a href="#about">About</a>
+                <a href="#skills">Expertise</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
     </nav>
